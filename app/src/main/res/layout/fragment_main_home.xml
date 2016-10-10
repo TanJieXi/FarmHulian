@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:pull="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:background="@color/bg_main_green"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height">
+
+        <RelativeLayout
+            android:layout_width="24dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="23dp">
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/home_title_person"
+                android:visibility="gone"
+                android:layout_width="24dp"
+                android:layout_height="23dp"
+                android:src="@mipmap/title_left_person"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="请搜索你想要的宝贝"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/bg_home_search"
+                />
+
+            <ImageView
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/f_home_search_img"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_title_erwei"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@mipmap/title_right_saoma"
+            />
+    </LinearLayout>
+
+    <!-- 这里是除了标题以外的东西,用Pull不能直接出来，先用Scroll -->
+    <!--   com.handmark.pulltorefresh.library.PullToRefreshScrollView   -->
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/mPullToScroll"
+        pull:ptrAnimationStyle="flip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <!-- 主页面碎片的banner条-->
+            <com.farmhulian.views.Viewpager_RadioButton_View
+                android:id="@+id/vr_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_height"/>
+
+            <!-- 一根线 -->
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginTop="2dp"
+                />
+            <!-- 下面的几个导航 -->
+            <LinearLayout
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+                <!-- 第一排 -->
+                <LinearLayout
+                    android:id="@+id/ll_btns1"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:id="@+id/tv_oil"
+                        style="@style/home_second_button_style"
+                        android:text="生态粮油"
+                        android:drawableTop="@mipmap/home_btn1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_fruit"
+                        style="@style/home_second_button_style"
+                        android:text="生态鲜果"
+                        android:drawableTop="@mipmap/home_btn2"
+                        />
+                    <TextView
+                        android:id="@+id/tv_vegetable"
+                        style="@style/home_second_button_style"
+                        android:text="绿色蔬菜"
+                        android:drawableTop="@mipmap/home_btn3"
+                        />
+                    <TextView
+                        android:id="@+id/tv_sea"
+                        style="@style/home_second_button_style"
+                        android:text="水产海鲜"
+                        android:drawableTop="@mipmap/home_btn4"
+                        />
+                    <TextView
+                        android:id="@+id/tv_travel"
+                        style="@style/home_second_button_style"
+                        android:text="生态旅游"
+                        android:drawableTop="@mipmap/home_btn5"
+                        />
+                </LinearLayout>
+                <!-- 第一排结束 -->
+                <!-- 第二排 -->
+                <LinearLayout
+                    android:id="@+id/ll_btns2"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:id="@+id/tv_field"
+                        style="@style/home_second_button_style"
+                        android:text="散养牧场"
+                        android:drawableTop="@mipmap/home_btn6"
+                        />
+                    <TextView
+                        android:id="@+id/tv_wild"
+                        style="@style/home_second_button_style"
+                        android:text="天然野生"
+                        android:drawableTop="@mipmap/home_btn7"
+                        />
+                    <TextView
+                        android:id="@+id/tv_localfood"
+                        style="@style/home_second_button_style"
+                        android:text="名优特产"
+                        android:drawableTop="@mipmap/home_btn8"
+                        />
+                    <TextView
+                        android:id="@+id/tv_rest"
+                        style="@style/home_second_button_style"
+                        android:text="生态餐厅"
+                        android:drawableTop="@mipmap/home_btn9"
+                        />
+                    <TextView
+                        android:id="@+id/tv_kind"
+                        style="@style/home_second_button_style"
+                        android:text="分类"
+                        android:drawableTop="@mipmap/home_btn10"
+                        />
+                </LinearLayout>
+                <!-- 第二排结束 -->
+            </LinearLayout>
+
+            <!--第三部分  热销推荐 开始-->
+            <RelativeLayout
+                android:id="@+id/rl_hot_more"
+                android:clickable="true"
+                style="@style/home_rele_rexiao_textview_bg_style"
+                android:layout_marginTop="10dp"
+               >
+                <TextView
+                    style="@style/wh_is_wrap.home_left_textview_style"
+                    android:text="热销推荐"
+                    />
+                <ImageView
+                    style="@style/home_right_imgview_style"
+                    />
+            </RelativeLayout>
+            <!-- 一根线 -->
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginBottom="3dp"
+                />
+
+            <!-- 第三部分内容 -->
+            <com.farmhulian.views.NoScrollGridView
+                android:background="#ecebeb"
+                android:id="@+id/home_tuijian_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:verticalSpacing="3dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="2"
+                android:gravity="center"
+                />
+            <!-- 第三部分结束-->
+            <!-- 第四部分 即将上市  开始-->
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginTop="3dp"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_jijiang_more"
+                android:clickable="true"
+                style="@style/home_rele_rexiao_textview_bg_style"
+                >
+                <TextView
+                    style="@style/wh_is_wrap.home_left_textview_style"
+                    android:text="即将上市"
+                    />
+                <ImageView
+                    style="@style/home_right_imgview_style"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginBottom="3dp"
+                />
+            <!-- 第四部分内容 -->
+            <com.farmhulian.views.NoScrollGridView
+                android:background="#ecebeb"
+                android:id="@+id/home_shangshi_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:verticalSpacing="3dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="2"
+                android:gravity="center"
+                />
+            <!-- 第四部分 结束-->
+            <!-- 第五部分 生态溯源 开始-->
+
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginTop="3dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_suyuan_more"
+                android:clickable="true"
+                style="@style/home_rele_rexiao_textview_bg_style"
+                >
+                <TextView
+                    style="@style/wh_is_wrap.home_left_textview_style"
+                    android:text="生态溯源"
+                    />
+                <ImageView
+                    style="@style/home_right_imgview_style"
+                    />
+            </RelativeLayout>
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginBottom="3dp"
+                />
+            <!-- 第五部分内容 -->
+            <com.farmhulian.views.NoScrollGridView
+                android:background="#ecebeb"
+                android:id="@+id/home_suyuan_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:verticalSpacing="3dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="2"
+                android:gravity="center"
+                />
+
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginTop="3dp"
+                />
+            <!-- 第五部分结束 -->
+            <!-- 第六部分  附近农场-->
+
+            <RelativeLayout
+                android:id="@+id/rl_near_more"
+                android:clickable="true"
+                style="@style/home_rele_rexiao_textview_bg_style"
+                >
+                <TextView
+                    style="@style/wh_is_wrap.home_left_textview_style"
+                    android:text="附近农场"
+                    />
+                <ImageView
+                    style="@style/home_right_imgview_style"
+                    />
+            </RelativeLayout>
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginBottom="3dp"
+                />
+
+            <!-- 内容 -->
+            <com.farmhulian.views.NoScrollListView
+                android:divider="@color/line_color"
+                android:dividerHeight="1dp"
+                android:id="@+id/home_fujin_listView"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"/>
+
+
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginTop="3dp"
+                />
+            <!-- 第七部分  海外农场-->
+
+            <RelativeLayout
+                android:id="@+id/rl_sea_more"
+                android:clickable="true"
+                style="@style/home_rele_rexiao_textview_bg_style"
+                >
+                <TextView
+                    style="@style/wh_is_wrap.home_left_textview_style"
+                    android:text="海外农场"
+                    />
+                <ImageView
+                    style="@style/home_right_imgview_style"
+                    />
+            </RelativeLayout>
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginBottom="3dp"
+                />
+
+            <!-- 内容 -->
+            <com.farmhulian.views.NoScrollListView
+                android:divider="@color/line_color"
+                android:dividerHeight="1dp"
+                android:id="@+id/home_haiwai_listView"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"/>
+
+
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginTop="3dp"
+                />
+            <!-- 农场体验 -->
+            <RelativeLayout
+                android:id="@+id/rl_tiyan_more"
+                android:clickable="true"
+                style="@style/home_rele_rexiao_textview_bg_style"
+                >
+                <TextView
+                    style="@style/wh_is_wrap.home_left_textview_style"
+                    android:text="农场体验"
+                    />
+                <ImageView
+                    style="@style/home_right_imgview_style"
+                    />
+            </RelativeLayout>
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginBottom="3dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+
+
+</LinearLayout>

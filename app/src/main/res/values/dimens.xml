@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--首页底部导航-->
+    <dimen name="public_nav_height">70.0dip</dimen>
+    <dimen name="public_nav_height_rl">50.0dip</dimen>
+    <dimen name="public_nav_center_img_size">40.0dip</dimen>
+    <dimen name="public_nav_img_size">20.0dip</dimen>
+    <dimen name="public_nav_font_size">10.0dip</dimen>
+    <dimen name="public_nav_font_margintop">4.0dip</dimen>
+    <!--首页头部导航-->
+    <dimen name="public_nav_top_height">50.0dip</dimen>
+    <dimen name="public_nav_top_img_size">20.0dip</dimen>
+    <dimen name="public_nav_top_font_size">20.0dip</dimen>
+    、
+    <dimen name="public_nav_top_img_padding_left">15.0dip</dimen>
+    <dimen name="public_nav_top_img_padding">12.0dip</dimen>
+    <dimen name="public_nav_top_img_margin_right">10.0dip</dimen>
+
+    <dimen name="public_title_height">45.0dip</dimen>
+    <!-- 广告条 -->
+    <dimen name="banner_height">160dip</dimen>
+    <!-- 首页 热销推荐等字样的高度-->
+    <dimen name="home_center_height">35dp</dimen>
+
+    <!-- 附近的item的宽度 -->
+    <dimen name="near_item_hight">130dip</dimen>
+    <!-- 评价里面的距离左边的距离-->
+    <dimen name="evaluate_margin_left">15dp</dimen>
+
+    <!-- 评价里面的字体大小  -->
+    <dimen name="evaluate_text_size">17sp</dimen>
+</resources>

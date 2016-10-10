@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_rest_icon"
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/moren_img3"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        />
+    <TextView
+        android:id="@+id/tv_rest_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="美味酸菜鸡，山野跑山鸡，味美肉香"
+        android:background="#f00"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

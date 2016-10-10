@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparence">#00000000</color>
+    <color name="half_transparence">#78000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#918f8f</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#ff68ac56</color>
+    <color name="yellow">#ffc8b23f</color>
+    <color name="blue">#ff4cbef2</color>
+    <color name="dark_gray">#ff767676</color>
+    <color name="dark_blue">#ff4cbee8</color>
+    <color name="red_title">#fffb393f</color>
+    <color name="orange">#ffff8800</color>
+    <color name="nav_bottom_font">#60A703</color>
+    <color name="main_rb_text_color">#F08E53</color>
+    <color name="title_bg_color">#60A703</color>
+    <color name="line_color">#c9c9c9</color>
+    <color name="near_item_fen_color">#FD8C21</color>
+
+    <color name="button_color">#FFC001</color>
+    <color name="oil_tab_color">#E85408</color>
+    <color name="oil_grid_text_color">#FC5C17</color>
+    <color name="bg_main_green">#08AA3B</color>
+    <color name="kind_title_color">#06AA3A</color>
+    <color name="kind_listview_left_color">#F29400</color>
+    <color name="now_pay_text_color">#FE3A00</color>
+    <color name="login_color">#08AA3B</color>
+
+    <color name="join_n">#F1F1F1</color>
+    <color name="join_c">#D0D0D0</color>
+
+    <color name="color_advice_blue">#1AA8E9</color>
+
+</resources>

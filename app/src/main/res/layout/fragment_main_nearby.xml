@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:pull="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.farmhulian.views.NavTopView
+        android:id="@+id/vt_titleView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height"/>
+    <TextView
+        style="@style/smallLineStyle1"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/near_myPullView"
+        pull:ptrAnimationStyle="flip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <com.farmhulian.views.Viewpager_RadioButton_View
+                android:id="@+id/near_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_height"
+                android:background="#f00"
+                />
+            <!-- 一根线 -->
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginTop="2dp"
+                />
+            <com.farmhulian.views.NoScrollListView
+                android:id="@+id/near_listView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+
+</LinearLayout>

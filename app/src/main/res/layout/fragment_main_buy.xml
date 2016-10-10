@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:pull="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.farmhulian.views.NavTopView
+        android:id="@+id/buy_titleView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height"
+        />
+    <TextView
+        style="@style/smallLineStyle"/>
+
+    <!--  <com.handmark.pulltorefresh.library.PullToRefreshScrollView   -->
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/buyPullToScroll"
+        pull:ptrAnimationStyle="flip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <com.farmhulian.views.NoScrollListView
+            android:id="@+id/buy_listView"
+            android:divider="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView >
+
+    <TextView
+        style="@style/smallLineStyle"
+        />
+    <RelativeLayout
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height">
+        <CheckBox
+            android:id="@+id/cb_buy_allChoice"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/goods_checkBox_style"
+            />
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/cb_buy_allChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            />
+
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/tv_pay"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计："
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                />
+            <TextView
+                android:id="@+id/tv_buyGoodsTotalPrice"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="88"
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  (不含运费)"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:clickable="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="结算"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/button_color"
+            />
+    </RelativeLayout>
+    <TextView
+        style="@style/smallLineStyle"
+        />
+
+
+</LinearLayout>

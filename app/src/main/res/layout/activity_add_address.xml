@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_address"
+    android:layout_width="match_parent"
+    android:background="#F5F5F5"
+    android:layout_height="match_parent"
+    tools:context="com.farmhulian.activities.AddAddressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!-- 标题栏 -->
+        <RelativeLayout
+            android:background="@color/bg_main_green"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/iv_addAddress_back"
+                android:clickable="true"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/join_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="地址编辑"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+
+        </RelativeLayout>
+
+        <!-- 姓名  -->
+        <EditText
+            android:maxLength="20"
+            android:id="@+id/et_add_name"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="收货人姓名"
+            android:textColorHint="#DEDEDE"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_add_address"
+            android:textCursorDrawable="@drawable/login_et_style"
+            />
+
+
+        <EditText
+            android:maxLength="11"
+            android:id="@+id/et_add_phone"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="收货人手机号码"
+            android:inputType="phone"
+            android:textColorHint="#DEDEDE"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_add_address"
+            android:textCursorDrawable="@drawable/login_et_style"
+            />
+
+        <EditText
+            android:maxLength="10"
+            android:inputType="number"
+            android:id="@+id/et_add_postcode"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="邮编,不清楚写000000"
+            android:textColorHint="#DEDEDE"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_add_address"
+            android:textCursorDrawable="@drawable/login_et_style"
+            />
+        <EditText
+            android:maxLength="50"
+            android:id="@+id/et_add_address"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="详细收货地址"
+            android:textColorHint="#DEDEDE"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_add_address"
+            android:textCursorDrawable="@drawable/login_et_style"
+            />
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/et_add_street_address"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="街道地址"
+            android:textColorHint="#DEDEDE"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_add_address"
+            android:textCursorDrawable="@drawable/login_et_style"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_addAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="确 定"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:background="#FFC001"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/iv_buyImg"
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="130dp"
+        android:src="@mipmap/moren_img3"
+        android:scaleType="fitXY"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="重庆市万州区高笋塘新城路1号"
+                    />
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/near_item_start_yellow"
+                        />
+                    <ImageView
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/near_item_start_yellow"
+                        />
+                    <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="4.3分"
+                        android:textSize="11sp"
+                        android:textColor="@color/near_item_fen_color"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="月销："
+                        android:textSize="11sp"
+                        android:textColor="@color/black"
+                        android:gravity="center|left"
+                        />
+                    <TextView
+                        android:id="@+id/tv_buyNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="120单"
+                        android:textSize="11sp"
+                        android:textColor="@color/black"
+                        android:gravity="center|left"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:drawablePadding="4dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:drawableTop="@mipmap/near_item_location"
+                android:text="200KM"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            style="@style/smallLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+        <!-- 下面那部分 -->
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1.2"
+            >
+            <!-- 三横排内容 -->
+            <LinearLayout
+                style="@style/near_list_item_ll_style"
+                >
+                <ImageView
+                    style="@style/wh_is_wrap"
+                    android:src="@mipmap/near_item_jian"
+                    />
+                <TextView
+                    style="@style/near_list_item_right_text_style"
+                    android:text="在线支付满88元减4元,满168减8元"
+                    />
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4个活动"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
+                    android:drawablePadding="4dp"
+                    android:gravity="right"
+                    android:drawableRight="@mipmap/near_item_more_b"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/near_list_item_ll_style"
+                >
+                <ImageView
+                    style="@style/wh_is_wrap"
+                    android:src="@mipmap/near_item_zhun"
+                    />
+                <TextView
+                    style="@style/near_list_item_right_text_style"
+                    android:text="准时必达，超时秒赔"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/near_list_item_ll_style"
+                >
+                <ImageView
+                    style="@style/wh_is_wrap"
+                    android:src="@mipmap/near_item_shou"
+                    />
+                <TextView
+                    style="@style/near_list_item_right_text_style"
+                    android:text="(不与其他活动同享)新用户下单立减6元"
+                    />
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>

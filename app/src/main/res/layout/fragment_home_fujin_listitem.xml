@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:id="@+id/iv_home_fujin_icon"
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="130dp"
+        android:src="@mipmap/moren_img3"
+        android:scaleType="fitXY"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_home_fujin_name"
+                    android:gravity="center|left"
+                    android:paddingLeft="9dp"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="分水李子山"
+                    />
+                <LinearLayout
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/near_item_start_yellow"
+                        />
+                    <ImageView
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/near_item_start_yellow"
+                        />
+                    <TextView
+                        android:id="@+id/tv_home_fujin_fen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="4.3分"
+                        android:textSize="12sp"
+                        android:textColor="@color/near_item_fen_color"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        />
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="月销："
+                        android:textSize="11sp"
+                        android:textColor="@color/black"
+                        android:gravity="center|left"
+                        />
+                    <TextView
+                        android:id="@+id/tv_home_fujin_byNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="120单"
+                        android:textSize="11sp"
+                        android:textColor="@color/black"
+                        android:gravity="center|left"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <ImageView
+                android:src="@mipmap/home_fujin_fahuo"
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                />
+        </RelativeLayout>
+
+
+
+        <TextView
+            style="@style/smallLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+        <!-- 下面那部分 -->
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1.2"
+            >
+            <!-- 三横排内容 -->
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="主人留言："
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_home_liuyan"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="选有机，祝健康"
+                android:textSize="15sp"
+                />
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>

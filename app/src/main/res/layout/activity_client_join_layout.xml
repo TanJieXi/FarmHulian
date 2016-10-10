@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 标题 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/bg_main_green">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:clickable="true"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/join_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="商户加盟"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <RadioButton
+            style="@style/client_join_radiobutton_style"
+            android:text="身份证明"
+            />
+        <RadioButton
+            style="@style/client_join_radiobutton_style"
+            android:text="营业执照"
+            />
+        <RadioButton
+            style="@style/client_join_radiobutton_style"
+            android:text="联系方式"
+            />
+    </RadioGroup>
+
+</LinearLayout>

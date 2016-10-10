@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_evaluate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.farmhulian.activities.EvaluateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!-- 标题栏 -->
+        <com.farmhulian.views.NavTopView
+            android:id="@+id/evaluate_topView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/public_title_height" />
+
+        <!-- 内容 -->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/evaluate_margin_left"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="供应商考评:     "
+                android:textSize="@dimen/evaluate_text_size"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_gongying_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/evaluate_text_size"
+                android:layout_height="wrap_content"
+                android:text="万州神龙架土特产"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <!-- 服务态度 -->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/evaluate_margin_left"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务态度:   "
+                android:textSize="@dimen/evaluate_text_size"
+                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:id="@+id/ll_fuwu_taidu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 到货速度 -->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/evaluate_margin_left"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到货速度:   "
+                android:textSize="@dimen/evaluate_text_size"
+                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:id="@+id/ll_daohuo_sudu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#DAFBB4"
+            />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/evaluate_margin_left"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="农场考评:     "
+                android:textSize="@dimen/evaluate_text_size"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_farm_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/evaluate_text_size"
+                android:layout_height="wrap_content"
+                android:text="甘宁红心猕猴桃基地"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <!-- 商品包装 -->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/evaluate_margin_left"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品包装:   "
+                android:textSize="@dimen/evaluate_text_size"
+                android:textColor="@color/black"
+                />
+            <RadioGroup
+                android:id="@+id/rg_eva"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:background="@drawable/selector_eva_wanhao"
+                    android:button="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_eva_wanzheng"
+                    android:button="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:background="@drawable/selector_eva_posun"
+                    android:button="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/evaluate_margin_left"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品评价:     "
+                android:textSize="@dimen/evaluate_text_size"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_goodName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/evaluate_text_size"
+                android:layout_height="wrap_content"
+                android:text="甘宁红心猕猴桃"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+
+        <!--  商品满意度-->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/evaluate_margin_left"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品满意度:   "
+                android:textSize="@dimen/evaluate_text_size"
+                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:id="@+id/ll_manyidu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+                <ImageView
+                    style="@style/evaluate_star_style"
+                    android:src="@mipmap/evaluate_star_n"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_advice"
+            android:layout_marginTop="10dp"
+            android:textCursorDrawable="@drawable/login_et_style"
+            android:background="@drawable/evaluate_et_bg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="20dp"
+            android:hint="谈谈你对该商品的感受"
+            android:textColorHint="#CDCDCD"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:maxLength="50"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_evaluate_upload"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@color/bg_main_green"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        />
+
+</RelativeLayout>

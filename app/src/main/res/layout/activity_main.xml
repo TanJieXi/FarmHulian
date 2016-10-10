@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.farmhulian.MainActivity">
+
+    <com.farmhulian.views.ScrollViewPager
+        android:id="@+id/main_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioButton
+            style="@style/Main_Bottom_RadioButton_Style"
+            android:drawableTop="@drawable/seletor_rb_home"
+            android:text="首页"
+            />
+        <RadioButton
+            style="@style/Main_Bottom_RadioButton_Style"
+            android:drawableTop="@drawable/seletor_rb_nearby"
+            android:text="附近商家"
+            />
+        <RadioButton
+            style="@style/Main_Bottom_RadioButton_Style"
+            android:drawableTop="@drawable/seletor_rb_choice"
+            android:text="精选"
+            />
+        <RadioButton
+            style="@style/Main_Bottom_RadioButton_Style"
+            android:drawableTop="@drawable/seletor_rb_buy"
+            android:text="购物车"
+            />
+        <RadioButton
+            style="@style/Main_Bottom_RadioButton_Style"
+            android:drawableTop="@drawable/seletor_rb_my"
+            android:text="我的"
+            />
+    </RadioGroup>
+</LinearLayout>

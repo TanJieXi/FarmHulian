@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_order_saleMach"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="销量优先"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_saleMach_choose"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/popi_gou"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        style="@style/smallLineStyle"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_order_price_to_up"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="价格从高到低"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_price_to_up_choose"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/popi_gou"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        style="@style/smallLineStyle"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_order_price_to_down"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="价格从高到低"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_price_to_down_choose"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/popi_gou"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        style="@style/smallLineStyle"/>
+
+    <LinearLayout
+
+        android:clickable="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:orientation="horizontal"
+            android:id="@+id/tv_order_opinion"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="评价最高排序"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_opinion_choose"
+            android:clickable="true"
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/popi_gou"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        style="@style/smallLineStyle"/>
+
+
+</LinearLayout>

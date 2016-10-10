@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_oil_goods_icon"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/moren_img3"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_oil_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="罗田大米 生态有机天然"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:paddingLeft="30dp"
+                android:id="@+id/tv_oil_goods_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当季新品"
+                android:textSize="15sp"
+                android:textColor="@color/oil_grid_text_color"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费："
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_oil_yunfei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="免邮"
+                android:textSize="13sp"
+                android:layout_marginRight="9dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产地："
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_oil_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万州"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/oil_goods_fuhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textSize="18sp"
+                android:textColor="@color/oil_grid_text_color"
+                />
+
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/tv_oil_good_price"
+                android:layout_toRightOf="@+id/oil_goods_fuhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56"
+                android:textColor="@color/oil_grid_text_color"
+                />
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:orientation="horizontal"
+               android:layout_alignParentEnd="true"
+               android:paddingRight="10dp"
+               android:layout_marginTop="3dp"
+               android:layout_alignParentRight="true"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/tv_oil_good_saleNum"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1315"
+                   android:textColor="@color/oil_grid_text_color"
+                   />
+
+               <TextView
+                   android:layout_toRightOf="@+id/oil_goods_fuhao"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="人付款"
+                   android:textColor="@color/oil_grid_text_color"
+                   />
+
+           </LinearLayout>
+
+
+
+            </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

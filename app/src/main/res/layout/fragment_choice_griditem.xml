@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/goods_icon"
+        android:layout_width="155dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/moren_img3"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="155dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="有机认证面粉 高精面粉"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/goods_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当年新品"
+                android:layout_marginLeft="35dp"
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费："
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_yunfei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6元"
+                android:textSize="13sp"
+                android:layout_marginRight="9dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产地："
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万州"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

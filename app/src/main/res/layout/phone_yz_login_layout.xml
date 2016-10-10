@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_Login_Right"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="手机号"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="4dp"
+                />
+            <EditText
+                android:id="@+id/et_right_phone"
+                android:inputType="number"
+                android:maxLength="11"
+                android:layout_width="0dp"
+                android:textCursorDrawable="@drawable/login_et_style"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="24dp"
+                android:textColorHint="#CCCCCC"
+                android:hint="请输入电话号码"
+                />
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/clear_phone"
+                />
+
+            <ImageView
+                android:id="@+id/iv_right_send_ma"
+                android:clickable="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/btn_send_yanzheng"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/smallLineStyle1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="验证码"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="4dp"
+                />
+            <EditText
+                android:id="@+id/et_right_ma"
+                android:maxLength="6"
+                android:inputType="number"
+                android:textCursorDrawable="@drawable/login_et_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="24dp"
+                android:background="@null"
+                android:textColorHint="#CCCCCC"
+                android:hint="请输入验证码"
+                />
+        </LinearLayout>
+        <TextView
+            style="@style/smallLineStyle1"
+            />
+        <Button
+            android:id="@+id/btn_right_login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="20sp"
+            android:background="@drawable/bg_login_btn"
+            android:textColor="@color/white"
+            android:text = "登录"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录代表你已同意"
+                />
+            <TextView
+                android:id="@+id/tv_agree_protocal"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:textColor="@color/bg_main_green"
+                android:layout_height="wrap_content"
+                android:text="《农场互联用户协议》"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

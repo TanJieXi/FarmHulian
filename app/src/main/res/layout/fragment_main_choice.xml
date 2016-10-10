@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pull="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/title_bg_color"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height">
+        <ImageView
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="24dp"
+            android:layout_height="23dp"
+            android:visibility="gone"
+            android:src="@mipmap/title_left_person"
+            />
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/rl_choice_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/bg_home_search"
+                />
+
+            <ImageView
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/f_home_search_img"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/choice_title_erwei"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@mipmap/title_right_saoma"
+            />
+    </LinearLayout>
+    <!-- 标题栏 -->
+
+    <com.farmhulian.views.NavTopView
+        android:id="@+id/buy_choice_titleView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height"
+        />
+    <TextView
+        style="@style/smallLineStyle1"/>
+
+    <!--com.handmark.pulltorefresh.library.PullToRefreshScrollView -->
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/choice_myPullView"
+        pull:ptrAnimationStyle="flip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <!-- 标题以下的 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_height"
+                android:src="@mipmap/buy_store_img"
+                />
+
+            <!-- 横标 -->
+
+            <!--精选  开始-->
+            <LinearLayout
+                android:orientation="horizontal"
+                style="@style/home_rele_rexiao_textview_bg_style"
+                >
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/rl_zonghe"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_zonghe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="综合"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+
+
+                <!--   销量 -->
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/rl_xiaoliang"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginRight="3dp"
+                            android:id="@+id/tv_xiaoliang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="销量"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            />
+                        <LinearLayout
+                            android:layout_toRightOf="@+id/tv_xiaoliang"
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/iv_xiangliang_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/click_all_black"
+                                />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <!-- 价格 -->
+                <RelativeLayout
+                    android:clickable="true"
+                    android:id="@+id/rl_jiage"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginRight="3dp"
+                            android:id="@+id/tv_jiage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价格"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            />
+                        <LinearLayout
+                            android:layout_toRightOf="@+id/tv_jiage"
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/iv_price_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/click_all_black"
+                                />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!-- 一根线 -->
+            <TextView
+                style="@style/smallLineStyle"
+                android:layout_marginBottom="3dp"
+                />
+
+
+            <!-- 结束-->
+
+            <com.farmhulian.views.NoScrollGridView
+                android:background="#ecebeb"
+                android:id="@+id/choice_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:verticalSpacing="5dp"
+                android:horizontalSpacing="2dp"
+                android:numColumns="2"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+
+
+</LinearLayout>

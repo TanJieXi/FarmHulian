@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choice_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:orientation="vertical"
+    tools:context="com.farmhulian.activities.ChoiceAddressActivity">
+
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:background="@color/bg_main_green"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_choice_back"
+            android:clickable="true"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/join_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="选择收货地址"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_add_address"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:text="添加"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <!-- 数据 -->
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/lv_choice_listView"
+        android:dividerHeight="10dp"
+        android:divider="#EEEEEE"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

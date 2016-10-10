@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advice_feed_back"
+    android:layout_width="match_parent"
+    android:background="#F0F0F0"
+    android:layout_height="match_parent"
+    tools:context="com.farmhulian.activities.AdviceFeedBackActivity">
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:background="@color/bg_main_green"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_advice_back"
+            android:clickable="true"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/kind_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <!-- 问题和意见反馈 -->
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="货品/商家投诉，常见纠纷问题"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="解决帮助"
+            android:textColor="@color/color_advice_blue"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="或致电公司客服: "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="400-0758-909"
+            android:textColor="@color/color_advice_blue"
+            />
+
+    </LinearLayout>
+
+    <!-- 问题好意见 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text = "问题和意见"
+        android:textSize="16sp"
+        />
+    <EditText
+        android:id="@+id/et_advice"
+        android:textCursorDrawable="@drawable/login_et_style"
+        android:layout_marginTop="10dp"
+        android:maxLength="100"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="#D7D7D7"
+        android:gravity="top"
+        android:hint="请告诉我们您的意见的建议，帮助我们改进和提高"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_advice"
+        />
+    <!-- 问题好意见 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text = "联系电话"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textCursorDrawable="@drawable/login_et_style"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="#D7D7D7"
+        android:inputType="phone"
+        android:gravity="top"
+        android:maxLength="11"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_advice_phone"
+        android:id="@+id/et_phone" />
+
+    <Button
+        android:id="@+id/btn_advice"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="18sp"
+        android:background="@drawable/bg_login_btn"
+        android:textColor="@color/white"
+        android:text = "提交"
+        />
+</LinearLayout>

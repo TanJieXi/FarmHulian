@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#EEEEEE"
+    android:layout_height="match_parent"
+    tools:context="com.farmhulian.activities.SetActivity">
+
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:background="@color/bg_main_green"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_set_back"
+            android:clickable="true"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/kind_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_clean_cache"
+        android:clickable="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除当前缓存"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tv_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0MB"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/smallLineStyle1"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_app_share"
+        android:clickable="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用分享"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        <ImageView
+            android:src="@mipmap/buy_store_title_more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于农场互联"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:drawablePadding="5dp"
+            android:text="当前版本V1.2.1"
+            android:drawableRight="@mipmap/buy_store_title_more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="退出登录"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:background="@color/white"
+        />
+
+
+</LinearLayout>

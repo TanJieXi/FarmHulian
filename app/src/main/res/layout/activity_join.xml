@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_join"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.farmhulian.activities.JoinActivity">
+    <!-- 标题 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/bg_main_green">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:clickable="true"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/join_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="加盟合作"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- 农场加盟，商户加盟，餐厅加盟-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/join_img_style"
+            android:src="@mipmap/join_nongchang" />
+
+        <LinearLayout
+            style="@style/join_ho_two_ll_style"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/join_two_ll_top"
+                android:text="农场加盟" />
+
+            <TextView
+                style="@style/join_two_ll_bottom"
+                android:text="从技术到销售，我们只用行动说话" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_join"
+            android:clickable="true"
+            style="@style/join_we_want_join_btn_style" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        style="@style/smallLineStyle1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/join_img_style"
+            android:src="@mipmap/join_shanghu" />
+
+        <LinearLayout
+            style="@style/join_ho_two_ll_style"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/join_two_ll_top"
+                android:text="商户加盟" />
+
+            <TextView
+                style="@style/join_two_ll_bottom"
+                android:text="知名到家服务平台，商机无限" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_join1"
+            android:clickable="true"
+            style="@style/join_we_want_join_btn_style" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        style="@style/smallLineStyle1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/join_img_style"
+            android:src="@mipmap/join_canting" />
+
+        <LinearLayout
+            style="@style/join_ho_two_ll_style"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/join_two_ll_top"
+                android:text="餐厅加盟" />
+
+            <TextView
+                style="@style/join_two_ll_bottom"
+                android:text="生态有机，健康与服务让你我同在" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_join2"
+            android:clickable="true"
+            style="@style/join_we_want_join_btn_style" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        style="@style/smallLineStyle1" />
+
+</LinearLayout>

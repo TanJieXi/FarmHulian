@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_travel_title"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:text="垂钓"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        />
+    <ImageView
+        android:id="@+id/iv_travel_icon"
+        android:layout_width="155dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/moren_img3"
+        android:scaleType="centerCrop"
+        />
+</LinearLayout>
